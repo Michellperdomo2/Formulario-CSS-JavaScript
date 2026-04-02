@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Formulario de Inscripción</title>
+<link rel="stylesheet" href="FormularioV1.css">
+</head>
+
+<body>
+<div class="formulario">
+<center>
+<h2>Formulario de Inscripción</h2>
+</center>
+<center>
+<img src="imagen1 (1).png" width="300">
+</center>
+<form>
+
+<br>
+<div class="campo">
+Tipo de Documento:
+<select required>
+<option value="">Seleccione</option>
+<option>Cédula</option>
+<option>Tarjeta de identidad</option>
+<option>Cédula de extranjería</option>
+</select>
+</div>
+<br>
+<div class="campo">
+Número de Documento:
+<input type="text" id="documento" pattern="[0-9]{5,15}" placeholder="Solo números" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Nombres:
+<input type="text" id="nombres" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Primer Apellido:
+<input type="text" id="apellido1"  minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Segundo Apellido:
+<input type="text" id="apellido2"  minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+<small class="mensaje"></small>
+</div>
+<br>
+
+<div class="campo">
+Ciudad:
+<select required>
+<option value="">Seleccione</option>
+<option>Bogotá</option>
+<option>Cartagena</option>
+<option>Medellín</option>
+<option>Cali</option>
+<option>Barranquilla</option>
+<option>Bucaramanga</option>
+<option>Santa Marta</option>
+<option>Ibagué</option>
+<option>Neiva</option>
+<option>Tunja</option>
+</select>
+</div>
+<br>
+
+<div class="fila">
+    <div class="campo">
+        Espacio geográfico:
+        <select required>
+            <option value="">Seleccione</option>
+            <option>manzana</option>
+            <option>calle</option>
+            <option>carrera</option>
+            <option>avenida</option>
+            <option>transversales</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        Dirección:
+        <input type="text" id="direccion" placeholder="D casa 15 gaitan-10 # 5-50" required>
+        <small class="mensaje"></small>
+    </div>
+</div>
+<br>
+<div class="campo">
+Teléfono fijo:
+<input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos">
+</div>
+<br>
+<div class="campo">
+Teléfono celular:
+<input type="tel" id="celular" pattern="[0-9]{10}" placeholder="10 dígitos" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Correo electrónico:
+<input type="email" id="correo" placeholder="ej.pepito2@gmail" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Usuario:
+<input type="text" id="usuario" minlength="3" maxlength="16" placeholder="Ej: Usuario12" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Password:
+<input type="password" id="password" maxlength="16" placeholder="16 caracteres" required>
+<small class="mensaje"></small>
+</div>
+<br>
+<div class="campo">
+Fecha de inscripción:
+<input type="date" id="fecha" min="2026-02-15" max="2026-03-06" required>
+</div>
+<br>
+
+<div class="campo">
+Intereses:
+<br>
+<input type="checkbox"> Descansar
+<input type="checkbox"> Deportes
+<input type="checkbox"> Música
+<input type="checkbox"> Videojuegos
+<input type="checkbox"> Viajar
+<br><br>
+Otros: <input type="text">
+</div>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+
+</form>
+</div>
+<script src="FormularioV2.js"></script>
+</body>
+</html> 

@@ -1,0 +1,113 @@
+h2{
+    color:#db2777;
+}
+
+body{
+font-family: 'calibri';
+background: linear-gradient(135deg, #fce7f3);
+display:flex;
+margin:0;
+padding:40px 0;
+justify-content:left;
+align-items:center;
+}
+
+.formulario{
+width:400px;
+background: #FFFFFF;
+padding:30px;
+margin: auto;
+margin-top: 100px;
+border-radius:5px;
+color: black;
+box-shadow: 7px 13px 37px lightpink;
+}
+
+.formulario h2{
+text-align:center;
+margin-bottom:14px;
+}
+
+input, select{
+width: 70%;
+padding:7px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid deeppink;
+border-radius:5px;
+box-sizing:border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+outline: none;
+border: 1px solid none;
+box-shadow: 0 0 0 2px deeppink;
+}
+
+input[type="submit"]{
+width: 100%;
+padding:10px;
+background:#ff0099;
+color:white;
+border:none;
+cursor:pointer;
+;
+}
+
+input[type="submit"]:hover{
+background:#990066;
+}
+
+input[type="reset"]{
+width: 100%;
+padding:10px;
+background:pink;
+border:none;
+cursor:pointer;
+}
+
+input[type="reset"]:hover{
+background:lightpink;
+}
+
+.campo{
+margin-bottom: 1px;
+}
+.campo input,
+.campo select{
+width:100%;
+padding:8px;
+margin-top:5px;
+border: 1px solid #f48fb1;
+border-radius:5px;
+box-sizing:border-box;
+}
+
+button:hover {
+  background: #e60087;
+}
+
+.fila {
+    display: flex;
+    gap: 30px;
+}
+
+.fila .campo {
+    flex: 1; 
+}
+
+.correcto {
+    border-color: green;
+}
+
+/* Incorrecto ❌ */
+.incorrecto {
+    border-color: red;
+}
+
+.mensaje {
+    font-size: 12px;
+    color: red;
+}
